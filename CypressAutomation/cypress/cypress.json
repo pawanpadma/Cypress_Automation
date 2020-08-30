@@ -1,0 +1,23 @@
+{
+    "baseUrl": "http://google.com/#/",
+    "integrationFolder": "cypress/integration",
+    "reporter": "mochawesome",
+    "reporterOptions": {
+      "charts": true,
+      "overwrite": false,
+      "html": false,
+      "json": true,
+      "reportDir": "cypress/report/mochawesome-report"
+      
+    },
+    "retries": {
+      "runMode": 3,
+      "openMode": 2
+    },
+    "responseTimeOut": 60000,
+    "requestTimeout": 60000,
+    "trashAssetsBeforeRuns": true,
+    "viewportHeight": 768,
+    "viewportWidth": 1024
+    
+  }
