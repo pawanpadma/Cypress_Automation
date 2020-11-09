@@ -1,5 +1,5 @@
 {
-    "baseUrl": "http://google.com/#/",
+    "baseUrl": "https://google.com",
     "integrationFolder": "cypress/integration",
     "reporter": "mochawesome",
     
@@ -12,13 +12,14 @@
       },
     
     "retries": {
-      "runMode": 3,
-      "openMode": 2
+      "runMode": 0,
+      "openMode": 0
     },
     "responseTimeOut": 60000,
     "requestTimeout": 60000,
     "trashAssetsBeforeRuns": true,
     "viewportHeight": 768,
-    "viewportWidth": 1024
+    "viewportWidth": 1024,
+    "chromeWebSecurity": false
     
   }

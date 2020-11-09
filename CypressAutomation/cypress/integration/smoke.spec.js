@@ -1,26 +1,25 @@
 /// <reference types="cypress" />
-import 'cypress-xpath';
-var username='input[name=email]';
+import login_page from '../pageobjects/login_page'
+import dashboard_page from '../pageobjects/dashboard_page'
+const login = new login_page();
+const dashboard = new dashboard_page();
 context('Utilities', () => {
-    beforeEach(() => {
-        cy.visit('/');
-    })
-  
-    it('My Application Demo', () => {
-        
-      // https://on.cypress.io/_
-      cy.get(username).type("rusdsev@yahoo.com");
-      cy.get('input[name=password]').type('$Blisdnk185');
-      cy.get('button[type=submit]').click();
-      cy.get('div[class*=MuiButtonBase-root]').trigger('mouseover');
-      cy.xpath('//div[@role="tooltip"]//div[text()="Leads"]').click();
-      //cy.get('div[role=tooltip]').click();
-      
-    })
-  
-    
-  
-    
-  
-    
+  beforeEach(() => {
+    cy.visit('/#/');
   })
+
+  it('My Application Demo', () => {
+
+
+    login.loginToAPP();
+    dashboard.navigateToLeads();
+    dashboard.navigateToLeadForm();
+
+  })
+
+
+
+
+
+
+})
