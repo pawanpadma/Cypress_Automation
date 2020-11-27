@@ -27,3 +27,14 @@ build/Release
 node_modules
 cypress/videos
 cypress/screenshots
+
+node_modules
+*.log
+*.aes
+cypress/screenshots
+cypress/videos
+cypress/logs
+cypress/fixtures/profile.json
+cypress/fixtures/users.json
+.history
+.vscode
