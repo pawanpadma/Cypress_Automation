@@ -5,7 +5,9 @@ var leadsDashBoard = "//div[@role='tooltip']//div[text()='Leads']";
 var plusButton = "(//span[@class='MuiButton-label'])[1]";
 var addLeadButton = "//img[@alt='Add Lead']";
 var firstName = "input[name='firstName']";
-var leadsHeading = "//h3[contains(@class,'collections-page-heading')]";
+var leadsHeading = "//h3[text()='Leads']";
+var userProfileButton="//div[contains(@class,'MuiToolbar-regular')]/button[2]";
+var logoutLink="//span[text()='Logout']";
 
 
 class dashboard_page {
@@ -20,6 +22,12 @@ class dashboard_page {
         cy.xpath(plusButton).click();
         cy.xpath(addLeadButton).click();
         cy.get(firstName).should('be.visible');
+    }
+
+    logoutOfApplication(){
+        cy.xpath(userProfileButton).click();
+        cy.xpath(logoutLink).click();        
+
     }
 }
 export default dashboard_page

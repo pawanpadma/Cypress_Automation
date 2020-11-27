@@ -7,7 +7,7 @@
     "clean": "del-cli cypress/report/*.* && del-cli cypress/report/mochawesome-report/*.* ",
     "cypress:run": "npx cypress run --browser chrome",
     "merge": "npx mochawesome-merge cypress/report/mochawesome-report/*.json > cypress/report/output.json",
-    "generate_mochawesome_report": "npx marge ./cypress/report/output.json --reportDir cypress/report/abc.html"
+    "generate_mochawesome_report": "npx marge ./cypress/report/output.json -f report -o cypress/report"
   },
   "author": "pawan",
   "license": "ISC",

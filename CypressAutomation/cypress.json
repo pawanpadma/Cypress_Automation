@@ -1,5 +1,5 @@
 {
-    "baseUrl": "https://google.com",
+    "baseUrl": "https://google.com/",
     "integrationFolder": "cypress/integration",
     "reporter": "mochawesome",
     

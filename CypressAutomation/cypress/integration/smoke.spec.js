@@ -8,7 +8,7 @@ context('Utilities', () => {
     cy.visit('/#/');
   })
 
-  it('My Application Demo', () => {
+  it('My Application Demo and submit', () => {
 
 
     login.loginToAPP();
@@ -17,8 +17,17 @@ context('Utilities', () => {
 
   })
 
+  it('login logout', () => {
 
 
+    login.loginToAPP();
+    dashboard.navigateToLeads();
+    dashboard.navigateToLeadForm();
+
+  })
+afterEach(() => {
+ dashboard.logoutOfApplication();
+})
 
 
 

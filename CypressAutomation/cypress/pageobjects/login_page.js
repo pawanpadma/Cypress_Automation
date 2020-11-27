@@ -6,8 +6,8 @@ var loginBtn='button[type=submit]';
 class login_page {
 
  loginToAPP() {
-    cy.get(username).type("google@google.com");
-    cy.get(password).type('google!');
+    cy.get(username).type("abc@abc.com");
+    cy.get(password).type("abc!");
     cy.get(loginBtn).click();        
     
  }
