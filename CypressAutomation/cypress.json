@@ -1,5 +1,5 @@
 {
-    "baseUrl": "https://google.com/",
+    "baseUrl": "https://hotmail.com/",
     "integrationFolder": "cypress/integration",
     "reporter": "cypress-mochawesome-reporter",
     
