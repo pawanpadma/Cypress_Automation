@@ -1,14 +1,14 @@
 {
-    "baseUrl": "https://google.com/",
+    "baseUrl": "https://dev.marketing.workwave.com/",
     "integrationFolder": "cypress/integration",
-    "reporter": "mochawesome",
+    "reporter": "cypress-mochawesome-reporter",
     
       "reporterOptions": {
         "charts": true,
    "overwrite": false,
    "html": false,
-   "json": true,
-   "reportDir": "cypress/report/mochawesome-report"
+   "json": true
+   
       },
     
     "retries": {

@@ -5,9 +5,9 @@ var password='input[name=password]';
 var loginBtn='button[type=submit]';
 class login_page {
 
- loginToAPP() {
-    cy.get(username).type("abc@abc.com");
-    cy.get(password).type("abc!");
+ loginToAPP(user,pass) {
+    cy.get(username, { timeout: 20000 }).type(user);
+    cy.get(password).type(pass);
     cy.get(loginBtn).click();        
     
  }
