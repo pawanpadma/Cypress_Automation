@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "clean": "trash cypress/reports && trash cypress/results",
-    "cypress:run": "npx cypress run --env environment=qa --browser chrome || echo Skipping schema build",
+    "cypress:run": "npx cypress run --env environment=qa --browser chrome || echo ignore test failure for nonzero",
     "cypress:report": "generate-mochawesome-report"
   },
   "author": "pawan",
